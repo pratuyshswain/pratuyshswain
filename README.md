@@ -1,33 +1,99 @@
-![Pratyusha Swain — an engraved relief map in ink, sage and copper](assets/relief-cover.svg)
+<a id="top"></a>
 
-[Project spotlight](#project-spotlight) · [Games](#games) · [Open source](#open-source) · [All repositories](https://github.com/pratuyshswain?tab=repositories)
+<p align="center"><a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/name.svg" width="100%" alt="Pratyusha Swain in animated contribution-grid lettering"/></a></p>
 
-I'm Pratyusha, a B.Tech computer science student. Two questions run through my Python projects: *what will a shop sell next month, and which customers might leave?* I work on the parts that make those predictions usable, from the warehouse schema to the API that serves a score.
+<p align="center"><a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/identity.svg" width="135" alt="Pratyusha Swain profile"/></a></p>
 
-## Project spotlight
+<p align="center"><a href="https://github.com/pratuyshswain"><b>@pratuyshswain</b></a></p>
 
-<a href="https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-"><img src="assets/sales-warehouse.svg" width="405" alt="Sales Forecasting Dashboard. Explore how date, store and department connect to the sales fact table." /></a>
-<a href="https://github.com/pratuyshswain/customer-retention-agent"><img src="assets/retention-study.svg" width="405" alt="Customer Retention Agent. Three synthetic demo customers receive churn probabilities of 98.4%, 12.6% and 96.2%." /></a>
+<p align="center"><img src="./assets/dashboard/typing.svg" width="100%" alt="B.Tech CSE · Python · Machine learning · Data engineering"/></p>
 
-**[Sales Forecasting Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-)** brings retail records into a SQLite warehouse, generates Holt–Winters forecasts and exports the results for BI tools. Start with the [warehouse schema](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/blob/main/docs/schema_reference.md) to see how sales are grouped by store, department and date.
+<p align="center"><a href="https://github.com/pratuyshswain?tab=followers"><img src="https://img.shields.io/github/followers/pratuyshswain?style=for-the-badge&amp;label=Followers&amp;color=844046&amp;labelColor=20262c" alt="GitHub followers"/></a> <a href="https://github.com/pratuyshswain?tab=repositories"><img src="https://img.shields.io/badge/Explore-Repositories-536b55?style=for-the-badge&amp;labelColor=20262c" alt="Explore repositories"/></a></p>
 
-**[Customer Retention Agent](https://github.com/pratuyshswain/customer-retention-agent)** takes a risk score and customer context and proposes a retention action through FastAPI. Follow one prediction through the [agent implementation](https://github.com/pratuyshswain/customer-retention-agent/blob/main/src/agent_orchestrator.py).
+<a id="about-me"></a>
 
-<details><summary>Engineering checks for both projects</summary>
+<img src="./assets/dashboard/section-about-me.svg" width="100%" alt="About me"/>
+
+<img src="./assets/dashboard/about.svg" width="100%" alt="Pratyusha Swain, B.Tech CSE student building machine learning and data engineering projects."/>
+
+In [cv-benchkit PR #89](https://github.com/udayraj1238/cv-benchkit/pull/89), I added input-path validation for COCO, YOLO and VOC conversions and six regression tests. The maintainers merged the change. I used AI assistance for implementation and testing.
+
+<p align="center"><a href="#about-me"><img src="./assets/dashboard/toc-about-me.svg" width="32%" alt="About me"/></a> <a href="#tech-stack"><img src="./assets/dashboard/toc-tech-stack.svg" width="32%" alt="Tech stack"/></a> <a href="#current-focus"><img src="./assets/dashboard/toc-current-focus.svg" width="32%" alt="Current focus"/></a><br/><a href="#yearly-highlights"><img src="./assets/dashboard/toc-yearly-highlights.svg" width="32%" alt="Yearly highlights"/></a> <a href="#github-stats"><img src="./assets/dashboard/toc-github-stats.svg" width="32%" alt="GitHub stats"/></a> <a href="#recent-activity"><img src="./assets/dashboard/toc-recent-activity.svg" width="32%" alt="Recent activity"/></a><br/><a href="#latest-releases"><img src="./assets/dashboard/toc-latest-releases.svg" width="32%" alt="Latest releases"/></a> <a href="#featured-projects"><img src="./assets/dashboard/toc-featured-projects.svg" width="32%" alt="Featured projects"/></a> <a href="#engineering-checks"><img src="./assets/dashboard/toc-engineering-checks.svg" width="32%" alt="Engineering checks"/></a><br/><a href="#contribution-graph"><img src="./assets/dashboard/toc-contribution-graph.svg" width="32%" alt="Contribution graph"/></a> <a href="#connect-with-me"><img src="./assets/dashboard/toc-connect-with-me.svg" width="32%" alt="Connect with me"/></a> <a href="#guestbook"><img src="./assets/dashboard/toc-guestbook.svg" width="32%" alt="Guestbook"/></a><br/></p>
+
+<a id="tech-stack"></a>
+
+<img src="./assets/dashboard/section-tech-stack.svg" width="100%" alt="Tech stack"/>
+
+<img src="./assets/dashboard/stack.svg" width="100%" alt="Python → pandas → SQLite → scikit-learn → FastAPI"/>
+
+<details><summary>Engineering tools</summary>
+
+Docker for packaging, pytest for tests, and GitHub Actions for CI. The featured projects also use Ruff, mypy and dependency auditing.
+
+</details>
+
+<a id="current-focus"></a>
+
+<img src="./assets/dashboard/section-current-focus.svg" width="100%" alt="Current focus"/>
+
+<img src="./assets/dashboard/focus.svg" width="100%" alt="Current project focus: customer retention and retail forecasting"/>
+
+<a id="yearly-highlights"></a>
+
+<img src="./assets/dashboard/section-yearly-highlights.svg" width="100%" alt="Yearly highlights"/>
+
+<img src="./assets/dashboard/highlights.svg" width="100%" alt="Monthly totals from the public GitHub contribution calendar"/>
+
+<a id="github-stats"></a>
+
+<img src="./assets/dashboard/section-github-stats.svg" width="100%" alt="GitHub stats"/>
+
+<img src="./assets/dashboard/stats.svg" width="100%" alt="Contributions, active days, public repositories and stars. Reporting period appears in the panel."/>
+
+<a id="recent-activity"></a>
+
+<img src="./assets/dashboard/section-recent-activity.svg" width="100%" alt="Recent activity"/>
+
+<img src="./assets/dashboard/activity.svg" width="100%" alt="Five public repositories with their most recent push timestamps in UTC"/>
+
+<a id="latest-releases"></a>
+
+<img src="./assets/dashboard/section-latest-releases.svg" width="100%" alt="Latest releases"/>
+
+As of 25 November 2026, the four featured repositories have no published GitHub releases. Their release pages are linked below.
+
+[Sales Forecasting Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/releases) · [Customer Retention Agent](https://github.com/pratuyshswain/customer-retention-agent/releases) · [Customer Churn Prediction](https://github.com/pratuyshswain/Customer-Churn-Prediction/releases) · [Mini Sales Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini/releases)
+
+<a id="featured-projects"></a>
+
+<img src="./assets/dashboard/section-featured-projects.svg" width="100%" alt="Featured projects"/>
+
+<p align="center"><a href="https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-"><img src="./assets/dashboard/project-0.svg" width="100%" alt="Sales Forecasting Dashboard"/></a></p>
+
+<p align="center"><a href="https://github.com/pratuyshswain/customer-retention-agent"><img src="./assets/dashboard/project-1.svg" width="100%" alt="Customer Retention Agent"/></a></p>
+
+<p align="center"><a href="https://github.com/pratuyshswain/Customer-Churn-Prediction"><img src="./assets/dashboard/project-2.svg" width="49%" alt="Customer Churn Prediction"/></a> <a href="https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini"><img src="./assets/dashboard/project-3.svg" width="49%" alt="Mini Sales Dashboard"/></a></p>
+
+[Sales warehouse schema](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/blob/main/docs/schema_reference.md) · [Retention agent implementation](https://github.com/pratuyshswain/customer-retention-agent/blob/main/src/agent_orchestrator.py)
+
+<a id="engineering-checks"></a>
+
+<img src="./assets/dashboard/section-engineering-checks.svg" width="100%" alt="Engineering checks"/>
 
 | Repository | Latest engineering workflow on main |
 | --- | --- |
 | Sales Forecasting Dashboard | [![Engineering workflow for Sales Forecasting Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/actions/workflows/engineering-checks.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/actions/workflows/engineering-checks.yml) |
 | Customer Retention Agent | [![Engineering workflow for Customer Retention Agent](https://github.com/pratuyshswain/customer-retention-agent/actions/workflows/engineering-checks.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/customer-retention-agent/actions/workflows/engineering-checks.yml) |
 
-</details>
+<a id="contribution-graph"></a>
 
-### More projects
+<img src="./assets/dashboard/section-contribution-graph.svg" width="100%" alt="Contribution graph"/>
 
-- **[Customer Churn Prediction](https://github.com/pratuyshswain/Customer-Churn-Prediction)** — Explore how a random forest classifies customers and how to visualize its predictions.
-- **[Mini Sales Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini)** — Follow a compact example from synthetic retail records to a forecast and risk chart.
+<img src="./assets/dashboard/skyline.svg" width="100%" alt="Isometric daily contribution skyline with column heights based on contribution counts"/>
 
-## Games
+[Explore the contribution calendar on GitHub](https://github.com/pratuyshswain?tab=overview)
+
+### Games
 
 **[Contour Survey ↗](https://raw.githack.com/pratuyshswain/pratuyshswain/main/docs/index.html)** — Rotate a 3D landscape and identify its highest marked station. Three rounds, four stations per round. [Get the standalone HTML](https://github.com/pratuyshswain/pratuyshswain/raw/refs/heads/main/docs/index.html).
 
@@ -45,8 +111,16 @@ Actual sales were **135**. Your forecast missed by 5 units. You beat the baselin
 
 </details>
 
-## Open source
+<a id="connect-with-me"></a>
 
-In [cv-benchkit PR #89](https://github.com/udayraj1238/cv-benchkit/pull/89), I added input-path validation for COCO, YOLO and VOC conversions and six regression tests. The maintainers merged the change. I used AI assistance for implementation and testing.
+<img src="./assets/dashboard/section-connect-with-me.svg" width="100%" alt="Connect with me"/>
 
-I work primarily with Python, SQL, pandas, scikit-learn and FastAPI. Across my featured repositories, I use pytest, Docker and GitHub Actions to check that the code runs beyond my own machine.
+<p align="center"><a href="https://github.com/pratuyshswain">GitHub profile</a> &nbsp; · &nbsp; <a href="https://github.com/pratuyshswain?tab=repositories">Browse repositories</a> &nbsp; · &nbsp; <a href="https://github.com/udayraj1238/cv-benchkit/pull/89">Upstream contribution</a></p>
+
+<a id="guestbook"></a>
+
+<img src="./assets/dashboard/section-guestbook.svg" width="100%" alt="Guestbook"/>
+
+<p align="center"><a href="https://github.com/pratuyshswain/pratuyshswain/issues/new?template=guestbook.yml">Sign the guestbook</a> &nbsp; · &nbsp; <a href="https://github.com/pratuyshswain/pratuyshswain/issues?q=is%3Aissue+in%3Atitle+%22Guestbook%22">Read the guestbook</a></p>
+
+<a href="#top"><img src="./assets/dashboard/footer.svg" width="100%" alt="Thanks for visiting. Back to top."/></a>

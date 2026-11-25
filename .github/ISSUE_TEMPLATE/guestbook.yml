@@ -1,0 +1,11 @@
+name: Guestbook
+description: Leave a public note on Pratyusha's profile.
+title: "Guestbook — "
+body:
+  - type: textarea
+    id: note
+    attributes:
+      label: Your note
+      description: Which project brought you here?
+    validations:
+      required: true
