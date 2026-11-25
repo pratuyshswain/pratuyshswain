@@ -1,38 +1,104 @@
 <!doctype html>
-<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pratyusha Swain | Neural Lab</title>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contour Survey · Pratyusha Swain</title>
 <style>
-:root{color-scheme:dark;--bg:#070d19;--panel:#0e1a2c;--line:#253853;--cyan:#22d3ee;--violet:#a78bfa;--muted:#9aadc5}*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,sans-serif;color:#eff6ff;background:radial-gradient(ellipse at 90% 0,#201b42,transparent 55%),var(--bg)}main{max-width:1120px;margin:auto;padding:28px 18px 50px}header{border-bottom:1px solid var(--line);padding:12px 0 28px}small,.eyebrow{font:12px ui-monospace,monospace;color:var(--cyan);letter-spacing:.17em;text-transform:uppercase}h1{font-size:clamp(38px,7vw,74px);line-height:1.03;letter-spacing:-.055em;margin:18px 0}h1 span{color:var(--cyan)}p{color:var(--muted)}a{color:#67e8f9}section{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px;margin-top:22px}h2{margin:0 0 8px;font-size:25px}.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}.grid section{min-width:0}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}button{font:inherit;font-weight:650;color:#e8faff;border:1px solid #37516b;background:#16283d;border-radius:10px;padding:10px 14px;cursor:pointer;touch-action:manipulation}button:hover,button[aria-pressed=true]{background:#164e63;border-color:var(--cyan)}button:focus-visible,a:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}canvas{display:block;width:100%;background:#070f1c;border:1px solid #263c52;border-radius:14px;touch-action:none}#scene{aspect-ratio:1.5}#game{aspect-ratio:1.5}.project{border-top:1px solid var(--line);padding:12px 0;min-height:120px}.score{font:14px ui-monospace,monospace;color:var(--cyan)}footer{padding-top:20px;color:var(--muted);font-size:13px}@media(max-width:760px){.grid{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+:root{color-scheme:light;--paper:#f7f4ec;--ink:#27352e;--rule:#b0b5a6;--rust:#863f27}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,sans-serif}
+main{max-width:1120px;margin:auto;padding:22px clamp(16px,4vw,52px) 40px}nav,footer,.tools,.choices{display:flex;gap:12px;align-items:center;flex-wrap:wrap}nav,footer{justify-content:space-between;border-bottom:1px solid var(--rule);padding-bottom:14px}footer{border-block:1px solid var(--rule);padding:12px 0}
+a{color:inherit}h1,h2{font:normal clamp(44px,7vw,78px)/1.05 Georgia,serif;margin:.45em 0 .2em;letter-spacing:-.045em}h2{font-size:32px;margin:0}header p{margin:0 0 24px}article{display:grid;grid-template-columns:2fr 1fr;border-top:1px solid var(--rule)}figure{margin:0;min-width:0}canvas{display:block;width:100%;aspect-ratio:1.4;touch-action:pan-y}aside{padding:24px 0 12px 24px;border-left:1px solid var(--rule)}button{font:inherit;color:inherit;background:transparent;border:1px solid #747e70;padding:7px 13px;border-radius:3px;cursor:pointer}button:hover,button[aria-pressed=true]{background:#e2e5d8}button:focus-visible,a:focus-visible{outline:3px solid var(--rust);outline-offset:3px}button:disabled{opacity:.5;cursor:default}small,.mono{font:13px/1.6 ui-monospace,monospace}#result{color:var(--rust);min-height:3em}.tools{padding:0 0 18px}.choices button{min-width:44px}.mono{display:block}button[hidden]{display:none}@media(max-width:740px){article{grid-template-columns:1fr}aside{padding:16px 0;border-left:0;border-top:1px solid var(--rule)}}
 </style>
-<main><header><div class="eyebrow">Portfolio / interactive systems</div><h1>NEURAL<span> LAB.</span></h1><p>Pratyusha Swain · Data science, machine learning and AI engineering.</p><a href="https://github.com/pratuyshswain">GitHub profile</a> · <a href="https://github.com/pratuyshswain?tab=repositories">All repositories</a></header>
-<div class="grid"><section><small>01 / Project constellation</small><h2>Explore the 3D network</h2><p>Drag to rotate the network or use the buttons. Select a node to explore a real project.</p><canvas id="scene" width="600" height="400" aria-label="Rotatable 3D network of four portfolio projects"></canvas><div class="controls"><button id="left">Rotate left</button><button id="right">Rotate right</button><button id="orbit" aria-pressed="false">Auto rotate</button></div><div id="projects" class="controls" aria-label="Select project"></div><div class="project" id="detail" aria-live="polite"></div></section>
-<section><small>02 / Data arcade</small><h2>Data runner</h2><p>Collect cyan data packets and avoid violet corrupted packets. Use arrow keys or the on-screen controls. The game starts only when you press Start.</p><div class="score" id="score">SCORE 0 / LIVES 3</div><canvas id="game" width="600" height="400" aria-label="Data runner arcade game"></canvas><div class="controls"><button id="start">Start / restart</button><button id="pause">Pause / resume</button><button id="gl" aria-label="Move left">◀ Left</button><button id="gr" aria-label="Move right">Right ▶</button></div><div id="status" role="status">Ready. Collect 20 packets to win.</div></section></div>
-<section><small>03 / Real engineering</small><h2>Open-source work</h2><p>Explore the <a href="https://github.com/udayraj1238/cv-benchkit/pull/89">merged cv-benchkit contribution</a>, which adds path validation and six regression tests. AI assistance was disclosed in the pull request.</p><p>Portfolio projects include automated Python, Docker and engineering workflows. No game scores, visualizations or synthetic data represent real project performance.</p></section><footer>Original Canvas-based experience. No tracking, backend or third-party JavaScript. Keyboard and touch controls supported.</footer></main>
+<main><nav><a href="https://github.com/pratuyshswain">Pratyusha Swain</a><small>Terrain studies</small></nav>
+<header><h1>Contour Survey</h1><p>Read a relief map. Find the highest survey station in three landscapes.</p></header>
+<article><figure><canvas id="map" role="img" aria-label="Rotatable terrain with four lettered survey stations"></canvas>
+<div class="tools"><button id="left" aria-label="Rotate left">↶ Left</button><button id="right" aria-label="Rotate right">Right ↷</button><button id="orbit" aria-pressed="false">Orbit</button></div></figure>
+<aside><p class="mono" id="round"></p><h2>Which station is highest?</h2><p>Compare the four brass markers. Rotate the map or inspect the field readings below.</p>
+<div class="choices" id="choices" aria-label="Choose a station"></div><p id="result" aria-live="polite"></p><button id="next" hidden></button>
+<details><summary>Field readings</summary><p id="readings" class="mono"></p></details></aside></article>
+<footer><small>Synthetic elevation · metres</small><a href="https://github.com/pratuyshswain/pratuyshswain/tree/main/docs">View source</a></footer></main>
 <script>
-"use strict";
-const projects=[
-{name:"Retention Agent",slug:"customer-retention-agent",desc:"Customer churn prediction and retention workflows exposed through FastAPI.",v:[-1,-.45,.65],color:"#22d3ee"},
-{name:"Sales Forecasting",slug:"Sales-Forecasting-Dashboard-",desc:"ETL, SQLite warehouse, Holt-Winters forecasting and BI exports.",v:[.9,-.55,-.6],color:"#60a5fa"},
-{name:"Churn Prediction",slug:"Customer-Churn-Prediction",desc:"Random forest customer classification and exploratory visualizations.",v:[.7,.85,.8],color:"#a78bfa"},
-{name:"Mini Sales",slug:"Sales-Forecasting-Dashboard-mini",desc:"Synthetic retail forecasting and risk visualization pipeline.",v:[-.65,.85,-.7],color:"#34d399"}];
-const el=id=>document.getElementById(id),scene=el("scene"),ctx=scene.getContext("2d"),game=el("game"),g=game.getContext("2d");
-let angle=.4,pitch=.15,auto=false,selected=0,hit=[],drag=null;
-const reduced=matchMedia("(prefers-reduced-motion: reduce)").matches;
-function project(v){let [x,y,z]=v,c=Math.cos(angle),s=Math.sin(angle),X=x*c-z*s,Z=x*s+z*c,Y=y*Math.cos(pitch)-Z*Math.sin(pitch);Z=y*Math.sin(pitch)+Z*Math.cos(pitch);let k=1/(1-Z*.18);return {x:300+X*145*k,y:200+Y*145*k,z:Z,k}}
-function grid(c){c.fillStyle="#070f1c";c.fillRect(0,0,600,400);c.strokeStyle="#13263a";c.lineWidth=1;for(let i=0;i<600;i+=30){c.beginPath();c.moveTo(i,0);c.lineTo(i,400);c.stroke()}for(let i=0;i<400;i+=30){c.beginPath();c.moveTo(0,i);c.lineTo(600,i);c.stroke()}}
-function drawScene(){grid(ctx);ctx.strokeStyle="#24445a";for(let k=-2;k<=2;k++){ctx.beginPath();for(let i=0;i<=80;i++){let u=i*Math.PI*2/80,v=k*Math.PI/8,p=project([Math.cos(v)*Math.cos(u),Math.sin(v),Math.cos(v)*Math.sin(u)]);if(i===0)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y)}ctx.stroke()}let nodes=projects.map((p,i)=>({...project(p.v),i,color:p.color}));for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){ctx.strokeStyle="#31566d";ctx.beginPath();ctx.moveTo(nodes[i].x,nodes[i].y);ctx.lineTo(nodes[j].x,nodes[j].y);ctx.stroke()}hit=nodes.slice().sort((a,b)=>a.z-b.z);for(let n of hit){ctx.beginPath();ctx.fillStyle=n.color;ctx.shadowColor=n.color;ctx.shadowBlur=selected===n.i?22:8;ctx.arc(n.x,n.y,(selected===n.i?17:11)*n.k,0,2*Math.PI);ctx.fill();ctx.shadowBlur=0;ctx.fillStyle="#e7f3ff";ctx.font="14px system-ui";ctx.textAlign="center";ctx.fillText(projects[n.i].name,Math.max(66,Math.min(534,n.x)),n.y+31)}}
-function select(i){selected=i;let p=projects[i];let h=document.createElement("strong"),d=document.createElement("p"),a=document.createElement("a");h.textContent=p.name;d.textContent=p.desc;a.href="https://github.com/pratuyshswain/"+p.slug;a.textContent="Open repository →";el("detail").replaceChildren(h,d,a);Array.from(el("projects").children).forEach((b,k)=>b.setAttribute("aria-pressed",String(k===i)));drawScene()}
-projects.forEach((p,i)=>{let b=document.createElement("button");b.textContent=p.name;b.addEventListener("click",()=>select(i));el("projects").append(b)});el("left").onclick=()=>{angle-=.25;drawScene()};el("right").onclick=()=>{angle+=.25;drawScene()};el("orbit").onclick=()=>{auto=!auto;el("orbit").setAttribute("aria-pressed",String(auto))};
-scene.addEventListener("pointerdown",e=>{drag={x:e.clientX,y:e.clientY,moved:false};scene.setPointerCapture(e.pointerId)});scene.addEventListener("pointermove",e=>{if(!drag)return;let dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(dx)+Math.abs(dy)>1){drag.moved=true;angle+=dx*.012;pitch=Math.max(-1.2,Math.min(1.2,pitch+dy*.01));drag.x=e.clientX;drag.y=e.clientY;drawScene()}});
-scene.addEventListener("pointerup",e=>{if(drag&&!drag.moved){let r=scene.getBoundingClientRect(),x=(e.clientX-r.left)*600/r.width,y=(e.clientY-r.top)*400/r.height;let n=hit.slice().reverse().find(n=>Math.hypot(n.x-x,n.y-y)<25*n.k);if(n)select(n.i)}drag=null});scene.addEventListener("pointercancel",()=>{drag=null});
-let state="ready",lane=2,score=0,lives=3,packets=[],spawn=0;const laneX=i=>60+i*120;
-function status(s){el("status").textContent=s}function hud(){el("score").textContent="SCORE "+score+" / LIVES "+lives}
-function start(){state="play";lane=2;score=0;lives=3;packets=[];spawn=0;hud();status("Running. Collect 20 data packets.")}
-function move(d){lane=Math.max(0,Math.min(4,lane+d));drawGame()}function toggle(){if(state==="play"){state="paused";status("Paused")}else if(state==="paused"){state="play";status("Running")}}
-el("start").onclick=start;el("pause").onclick=toggle;el("gl").onclick=()=>move(-1);el("gr").onclick=()=>move(1);
-document.addEventListener("keydown",e=>{if(state!=="play"||e.altKey||e.ctrlKey||e.metaKey)return;if(e.key==="ArrowLeft"||e.key==="ArrowRight"){e.preventDefault();move(e.key==="ArrowLeft"?-1:1)}});
-function update(dt){if(state!=="play")return;spawn-=dt;if(spawn<=0){packets.push({lane:Math.floor(Math.random()*5),y:-20,bad:Math.random()<.28});spawn=Math.max(.34,.85-score*.018)}for(let p of packets){p.y+=dt*(145+score*3);if(!p.used&&p.y>=330&&p.y<=375&&p.lane===lane){p.used=true;if(p.bad)lives--;else score++;hud()}}packets=packets.filter(p=>!p.used&&p.y<420);if(lives<=0){state="over";status("Game over. Press Start to try again.")}else if(score>=20){state="win";status("Pipeline complete! You collected 20 packets.")}}
-function drawGame(){grid(g);g.strokeStyle="#223951";for(let i=1;i<5;i++){g.beginPath();g.moveTo(i*120,0);g.lineTo(i*120,400);g.stroke()}for(let p of packets){g.fillStyle=p.bad?"#a78bfa":"#22d3ee";g.fillRect(laneX(p.lane)-12,p.y-12,24,24);g.fillStyle="#07111f";g.font="bold 15px monospace";g.textAlign="center";g.fillText(p.bad?"×":"+ ",laneX(p.lane),p.y+5)}g.fillStyle="#34d399";g.beginPath();g.moveTo(laneX(lane),334);g.lineTo(laneX(lane)-22,376);g.lineTo(laneX(lane)+22,376);g.closePath();g.fill();if(state!=="play"){g.fillStyle="#07111fcc";g.fillRect(0,145,600,110);g.fillStyle="#eff6ff";g.textAlign="center";g.font="bold 28px system-ui";g.fillText({ready:"READY TO RUN",paused:"PAUSED",over:"TRY AGAIN",win:"PIPELINE COMPLETE"}[state],300,208)}}
-let last=performance.now();function tick(t){let dt=Math.min(.05,(t-last)/1000);last=t;if(auto){angle+=dt*.5;drawScene()}if(state==="play"){update(dt);drawGame()}requestAnimationFrame(tick)}select(0);drawGame();requestAnimationFrame(tick);
-if(reduced)status("Ready. Animation is opt-in. Collect 20 packets to win.");
+'use strict';
+const el=id=>document.getElementById(id);
+const canvas=el('map'), ctx=canvas.getContext('2d');
+const stations=[[-.49,-.46],[.45,-.42],[.44,.47],[-.45,.48]];
+const letters='ABCD';
+let angle=-.38,round=0,score=0,answered=false,orbit=false,frame=0,lastTime=0,order=[];
+let points=[],cells=[],width,height;
+function elevation(x,y){
+  let z=.07+.04*Math.sin(4*x+2*y+round);
+  stations.forEach(([u,v],i)=>{
+    const a=order[i];
+    z+=a*Math.exp(-((x-u)**2/(.15+.04*i)+(y-v)**2/.24));
+  });
+  return z;
+}
+function project(x,y,z){
+  const u=x*Math.cos(angle)-y*Math.sin(angle), v=x*Math.sin(angle)+y*Math.cos(angle);
+  return [width*(.5+.305*u),height*(.65+.185*v-.39*z),v];
+}
+function render(){
+  const box=canvas.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2);
+  width=box.width;height=box.height;
+  if(canvas.width!==Math.round(width*dpr)||canvas.height!==Math.round(height*dpr)){
+    canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);
+  }
+  ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,width,height);
+  const screen=points.map(p=>project(...p));
+  const depth=c=>screen[c.ids[0]][2]+screen[c.ids[2]][2];
+  cells.sort((a,b)=>depth(a)-depth(b));
+  for(const {ids,shade} of cells){
+    ctx.beginPath();ids.forEach((id,i)=>{const [x,y]=screen[id];i?ctx.lineTo(x,y):ctx.moveTo(x,y)});ctx.closePath();
+    ctx.fillStyle=shade;ctx.fill();ctx.lineWidth=.55;ctx.strokeStyle='#596853';ctx.stroke();
+  }
+  stations.forEach(([x,y],i)=>{
+    const [u,v]=project(x,y,elevation(x,y));
+    ctx.strokeStyle='#684630';ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(u,v);ctx.lineTo(u,v-16);ctx.stroke();
+    ctx.fillStyle='#79462d';ctx.beginPath();ctx.arc(u,v-22,10,0,2*Math.PI);ctx.fill();
+    ctx.font='bold 12px system-ui';ctx.fillStyle='white';ctx.textAlign='center';ctx.fillText(letters[i],u,v-18);
+  });
+}
+function terrain(){
+  points=[];cells=[];
+  const n=30;
+  for(let j=0;j<=n;j++)for(let i=0;i<=n;i++){
+    const x=2*i/n-1,y=2*j/n-1;points.push([x,y,elevation(x,y)]);
+    if(i&&j){
+      const k=points.length-1,ids=[k-n-2,k-n-1,k,k-1];
+      const z=points[k][2],light=Math.round(83-16*z+28*(z-points[k-1][2]));
+      cells.push({ids,shade:'hsl(79 18% '+light+'%)'});
+    }
+  }
+}
+function survey(){
+  answered=false;order=[.32,.49,.67,.95];
+  for(let i=3;i>0;i--){const j=Math.floor(Math.random()*(i+1));[order[i],order[j]]=[order[j],order[i]]}
+  el('round').textContent='Survey '+(round+1)+' / 3  ·  Score '+score;
+  el('result').textContent='';el('next').hidden=true;
+  el('choices').replaceChildren();
+  const heights=stations.map(([x,y])=>Math.round(1000*elevation(x,y)));
+  const best=heights.indexOf(Math.max(...heights));
+  el('readings').textContent=heights.map((h,i)=>letters[i]+' · '+h+' m').join(' / ');
+  document.querySelector('details').open=false;
+  [...letters].forEach((label,i)=>{
+    const button=document.createElement('button');button.textContent=label;
+    button.onclick=()=>{
+      if(answered)return;answered=true;score+=Number(i===best);
+      el('result').textContent=(i===best?'Correct. ':'Station '+label+' is at '+heights[i]+' m. ')+letters[best]+' is highest at '+heights[best]+' m.';
+      el('round').textContent='Survey '+(round+1)+' / 3  ·  Score '+score;
+      for(const b of el('choices').children)b.disabled=true;
+      el('next').textContent=round===2?'Play again':'Next landscape';el('next').hidden=false;el('next').focus();
+    };el('choices').append(button);
+  });
+  terrain();render();
+}
+el('next').onclick=()=>{round=(round+1)%3;if(!round)score=0;survey();el('choices').firstChild.focus()};
+el('left').onclick=()=>{angle-=.27;render()};el('right').onclick=()=>{angle+=.27;render()};
+function tick(t){angle+=Math.min(64,t-lastTime)*.00022;lastTime=t;render();frame=requestAnimationFrame(tick)}
+el('orbit').onclick=()=>{orbit=!orbit;el('orbit').setAttribute('aria-pressed',String(orbit));el('orbit').textContent=orbit?'Pause orbit':'Orbit';if(orbit){lastTime=performance.now();frame=requestAnimationFrame(tick)}else cancelAnimationFrame(frame)};
+let drag=null;
+canvas.onpointerdown=e=>{drag=e.clientX;canvas.setPointerCapture(e.pointerId)};
+canvas.onpointermove=e=>{if(drag!==null){angle+=(e.clientX-drag)*.009;drag=e.clientX;render()}};
+canvas.onlostpointercapture=()=>{drag=null};
+survey();new ResizeObserver(render).observe(canvas);
 </script></html>
