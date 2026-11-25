@@ -1,5 +1,4 @@
 """Render the profile's contribution and repository panels using GitHub's public data."""
-from collections import Counter
 from datetime import date
 from html import escape
 from math import log2
@@ -43,29 +42,6 @@ def github_data():
 def render(days,repos):
     assert days and all(n>=0 for _,n in days)
     end = days[-1][0]
-    active = [(d,n) for d,n in days if n]
-    months = Counter()
-    for day,count in days:
-        months[day[:7]] += count
-    body = text(30,38,'CONTRIBUTIONS BY MONTH   /   '+end,15,'#98a5b2',True)
-    recent = list(months.items())[-12:]
-    for i,(month,n) in enumerate(recent):
-        x=34+i*76
-        h=round(94*n/max(1,max(v for _,v in recent)))
-        body += f'<rect x="{x}" y="{165-h}" width="40" height="{max(1,h)}" fill="#a74848"/>'
-        body += text(x,156-h,n,14)+text(x,190,month[5:],15,'#adb7c1',True)
-    save('highlights',210,'Monthly contributions during the displayed period',body)
-    stats=[('Contributions',sum(n for _,n in days)),('Active days',len(active)),('Public repos',len(repos)),('Stars received',sum(r['stars'] for r in repos if not r['fork']))]
-    body=text(32,36,days[0][0]+'  —  '+end,16,'#a1acb7',True)
-    for i,(label,value) in enumerate(stats):
-        x=32+i*234
-        body+=text(x,102,value,48)+text(x,135,label,19,'#aeb9c3')
-    save('stats',164,'Contribution and public repository statistics',body)
-    body=text(30,39,'LATEST PUBLIC REPOSITORY PUSHES   /   UTC',17,'#98a5b2',True)
-    for i,r in enumerate(sorted(repos,key=lambda r:r['push'],reverse=True)[:5]):
-        y=81+i*39
-        body+=text(32,y,r['name'],23)+text(690,y,r['push'][:16].replace('T','  '),18,'#a1b599',True)
-    save('activity',260,'Most recently pushed public repositories',body)
     body=text(30,39,'CONTRIBUTION SKYLINE   /   '+end,16,'#aab5c0',True)
     start=date.fromisoformat(days[0][0])
     for day,count in days:
@@ -86,6 +62,19 @@ if __name__=='__main__':
     from animation import skyline
     from name_box import render as render_name_box
     days, repos = github_data()
+    from dashboard_panels import FEATURED, panels
+    releases = {}
+    for name in FEATURED:
+        page = 1
+        while True:
+            entries = fetch(f'https://api.github.com/repos/{USER}/{name}/releases?per_page=100&page={page}')
+            published = next((entry for entry in entries if entry.get('published_at') and not entry['draft']), None)
+            if published or len(entries) < 100:
+                releases[name] = published
+                break
+            page += 1
+    for name, image in panels(days, repos, releases).items():
+        (OUT / (name + '.svg')).write_text(image, encoding='utf-8')
     render(days, repos)
     skyline(days)
     (OUT / 'name-box.svg').write_text(render_name_box(days), encoding='utf-8')
