@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<p align="center"><a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/name.svg" width="100%" alt="Pratyusha Swain in animated contribution-grid lettering"/></a></p>
+<p align="center"><a href="https://github.com/pratuyshswain"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/dashboard/name.svg"/><img src="./assets/dashboard/name.gif" width="100%" alt="Pratyusha Swain in animated grid lettering with a travelling pixel snake"/></picture></a></p>
 
 <p align="center"><a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/identity.svg" width="135" alt="Pratyusha Swain profile"/></a></p>
 
@@ -89,7 +89,7 @@ As of 25 November 2026, the four featured repositories have no published GitHub 
 
 <img src="./assets/dashboard/section-contribution-graph.svg" width="100%" alt="Contribution graph"/>
 
-<img src="./assets/dashboard/skyline.svg" width="100%" alt="Isometric daily contribution skyline with column heights based on contribution counts"/>
+<picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/dashboard/skyline.svg"/><img src="./assets/dashboard/skyline.gif" width="100%" alt="Animated 3D orbit of Pratyusha’s daily GitHub contributions"/></picture>
 
 [Explore the contribution calendar on GitHub](https://github.com/pratuyshswain?tab=overview)
 

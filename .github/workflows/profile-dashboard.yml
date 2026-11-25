@@ -14,13 +14,15 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
+      - name: Install GIF renderer
+        run: sudo apt-get update -qq && sudo apt-get install -y python3-pil fonts-dejavu-core
       - name: Render public data panels
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python3 scripts/profile.py
+        run: /usr/bin/python3 scripts/profile.py
       - name: Publish changed panels
         run: |
-          git add assets/dashboard/{activity,highlights,skyline,stats}.svg
+          git add assets/dashboard/{activity,highlights,skyline,stats}.svg assets/dashboard/skyline.gif
           if git diff --cached --quiet; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

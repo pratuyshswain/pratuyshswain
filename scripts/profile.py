@@ -83,4 +83,7 @@ def render(days,repos):
     save('skyline',266,'Isometric contribution calendar',body)
 
 if __name__=='__main__':
-    render(*github_data())
+    from animation import skyline
+    days, repos = github_data()
+    render(days, repos)
+    skyline(days)
