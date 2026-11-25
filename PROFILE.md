@@ -16,6 +16,8 @@
 
 <img src="./assets/dashboard/about.svg" width="100%" alt="Pratyusha Swain, B.Tech CSE student building machine learning and data engineering projects."/>
 
+<img src="./assets/dashboard/about-code.svg" width="100%" alt="Pratyusha's developer profile in Python"/>
+
 In [cv-benchkit PR #89](https://github.com/udayraj1238/cv-benchkit/pull/89), I added input-path validation for COCO, YOLO and VOC conversions and six regression tests. The maintainers merged the change. I used AI assistance for implementation and testing.
 
 <p align="center"><a href="#about-me"><img src="./assets/dashboard/toc-about-me.svg" width="32%" alt="About me"/></a> <a href="#tech-stack"><img src="./assets/dashboard/toc-tech-stack.svg" width="32%" alt="Tech stack"/></a> <a href="#current-focus"><img src="./assets/dashboard/toc-current-focus.svg" width="32%" alt="Current focus"/></a><br/><a href="#yearly-highlights"><img src="./assets/dashboard/toc-yearly-highlights.svg" width="32%" alt="Yearly highlights"/></a> <a href="#github-stats"><img src="./assets/dashboard/toc-github-stats.svg" width="32%" alt="GitHub stats"/></a> <a href="#recent-activity"><img src="./assets/dashboard/toc-recent-activity.svg" width="32%" alt="Recent activity"/></a><br/><a href="#latest-releases"><img src="./assets/dashboard/toc-latest-releases.svg" width="32%" alt="Latest releases"/></a> <a href="#featured-projects"><img src="./assets/dashboard/toc-featured-projects.svg" width="32%" alt="Featured projects"/></a> <a href="#engineering-checks"><img src="./assets/dashboard/toc-engineering-checks.svg" width="32%" alt="Engineering checks"/></a><br/><a href="#contribution-graph"><img src="./assets/dashboard/toc-contribution-graph.svg" width="32%" alt="Contribution graph"/></a> <a href="#connect-with-me"><img src="./assets/dashboard/toc-connect-with-me.svg" width="32%" alt="Connect with me"/></a> <a href="#guestbook"><img src="./assets/dashboard/toc-guestbook.svg" width="32%" alt="Guestbook"/></a><br/></p>
@@ -122,5 +124,9 @@ Actual sales were **135**. Your forecast missed by 5 units. You beat the baselin
 <img src="./assets/dashboard/section-guestbook.svg" width="100%" alt="Guestbook"/>
 
 <p align="center"><a href="https://github.com/pratuyshswain/pratuyshswain/issues/new?template=guestbook.yml">Sign the guestbook</a> &nbsp; · &nbsp; <a href="https://github.com/pratuyshswain/pratuyshswain/issues?q=is%3Aissue+in%3Atitle+%22Guestbook%22">Read the guestbook</a></p>
+
+<img src="./assets/dashboard/code-rain.svg" width="100%" alt="Falling programming symbols with Pratyusha Swain's closing message"/>
+
+[Browse profile animations](./ANIMATIONS.md)
 
 <a href="#top"><img src="./assets/dashboard/footer.svg" width="100%" alt="Thanks for visiting. Back to top."/></a>
