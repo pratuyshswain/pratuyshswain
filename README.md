@@ -8,6 +8,16 @@
   <a href="https://github.com/udayraj1238/cv-benchkit/pull/89"><img alt="Upstream contribution" src="https://img.shields.io/badge/OPEN_SOURCE-047857?style=for-the-badge&amp;logo=git&amp;logoColor=white"/></a>
 </p>
 
+## Interactive / Neural Lab
+
+<p align="center"><img src="assets/neural-orbit.gif" width="100%" alt="Animated rotating neural network, an original decorative 3D-style visualization"/></p>
+
+Explore a rotatable project constellation and play **Data Runner**, a keyboard- and touch-controlled arcade game. The game is a fictional data-pipeline challenge, not a performance metric.
+
+[Interactive lab source / download](docs/index.html) · [GitHub Pages setup](docs/SETUP.md)
+
+The animation is embedded directly in the README. The interactive lab requires a browser; GitHub Pages must be enabled before it is publicly hosted.
+
 ## 01 / Developer profile
 
 I'm a B.Tech CSE student building practical Python applications that turn data into useful predictions, visualizations and automated workflows.
