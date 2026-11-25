@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="265" viewBox="0 0 420 265" role="img" aria-labelledby="title desc">
+<title id="title">The sales warehouse</title><desc id="desc">The date, store and department dimensions connect to the central sales fact table.</desc>
+<rect width="420" height="265" rx="3" fill="#e6e5d7"/>
+<g fill="#233d36" font-family="Georgia,serif">
+<text x="22" y="44" font-size="28">The sales warehouse</text></g>
+<path d="M22 59H398M22 218H398" stroke="#233d36" opacity=".4"/>
+<style>@keyframes route{to{stroke-dashoffset:-24}}.route{stroke-dasharray:4 8;animation:route 3s linear infinite}@media(prefers-reduced-motion:reduce){.route{animation:none}}</style>
+<g stroke="#637c6d" fill="none"><path d="M156 88H177L209 138H255M156 138H255M156 188H177L209 138"/><path class="route" d="M156 88H177L209 138H255M156 188H177L209 138" stroke="#934727" stroke-width="2"/></g>
+<g font-family="monospace" font-size="15" fill="#273d32">
+<text x="22" y="93">dim_date</text><text x="22" y="143">dim_store</text><text x="22" y="193">dim_department</text></g>
+<path d="M252 117l65-16 78 16-67 18z" fill="#a3b29e" stroke="#536c5d"/>
+<path d="M252 117l76 18v43l-76-19z" fill="#476254"/><path d="M328 135l67-18v42l-67 19z" fill="#798e79"/>
+<text x="323" y="199" text-anchor="middle" font-family="monospace" font-size="15" fill="#273d32">fact_sales</text>
+<text x="22" y="246" font-family="monospace" font-size="13" fill="#334b3e">SQLITE  /  STAR SCHEMA</text></svg>

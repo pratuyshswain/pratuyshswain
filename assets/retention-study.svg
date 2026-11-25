@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="265" viewBox="0 0 420 265" role="img" aria-labelledby="title desc">
+<title id="title">Reading churn risk</title><desc id="desc">Three synthetic demo customers have predicted churn risks of 98.4, 12.6 and 96.2 percent.</desc>
+<rect width="420" height="265" rx="3" fill="#263933"/>
+<g fill="#f2eedf" font-family="Georgia,serif">
+<text x="22" y="44" font-size="28">Reading churn risk</text></g>
+<path d="M22 59H398M22 218H398" stroke="#f2eedf" opacity=".4"/>
+<g font-family="monospace" font-size="14" fill="#f2eedf">
+<text x="22" y="97">DEMO-001</text><path d="M112 92H324" stroke="#62756b" stroke-width="2"/><path d="M112 92h208.6" stroke="#caa287" stroke-width="4"/><circle cx="320.60800000000006" cy="92" r="5" fill="#edc6a0"/><text x="398" y="97" text-anchor="end">98.4%</text>
+<text x="22" y="140">DEMO-002</text><path d="M112 135H324" stroke="#62756b" stroke-width="2"/><path d="M112 135h26.7" stroke="#caa287" stroke-width="4"/><circle cx="138.712" cy="135" r="5" fill="#edc6a0"/><text x="398" y="140" text-anchor="end">12.6%</text>
+<text x="22" y="183">DEMO-003</text><path d="M112 178H324" stroke="#62756b" stroke-width="2"/><path d="M112 178h203.9" stroke="#caa287" stroke-width="4"/><circle cx="315.944" cy="178" r="5" fill="#edc6a0"/><text x="398" y="183" text-anchor="end">96.2%</text>
+</g><text x="22" y="246" font-family="monospace" font-size="13" fill="#e2dfd1">SYNTHETIC CUSTOMER DEMO</text></svg>

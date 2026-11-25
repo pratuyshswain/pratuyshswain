@@ -1,19 +1,33 @@
 ![Pratyusha Swain — an engraved relief map in ink, sage and copper](assets/relief-cover.svg)
 
-I'm Pratyusha, a B.Tech computer science student. I build Python tools for questions like *which customers might leave?* and *how much will a shop sell next month?* I like the work between a model and the person using it: cleaning the input, testing the prediction, and giving the result a useful interface.
+[Project spotlight](#project-spotlight) · [Games](#games) · [Open source](#open-source) · [All repositories](https://github.com/pratuyshswain?tab=repositories)
 
-[Play Contour Survey](https://raw.githack.com/pratuyshswain/pratuyshswain/main/docs/index.html) · [Browse my repositories](https://github.com/pratuyshswain?tab=repositories)
+I'm Pratyusha, a B.Tech computer science student. Two questions run through my Python projects: *what will a shop sell next month, and which customers might leave?* I work on the parts that make those predictions usable, from the warehouse schema to the API that serves a score.
 
-## Selected work
+## Project spotlight
 
-| Project | What you can explore |
+<a href="https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-"><img src="assets/sales-warehouse.svg" width="405" alt="Sales Forecasting Dashboard. Explore how date, store and department connect to the sales fact table." /></a>
+<a href="https://github.com/pratuyshswain/customer-retention-agent"><img src="assets/retention-study.svg" width="405" alt="Customer Retention Agent. Three synthetic demo customers receive churn probabilities of 98.4%, 12.6% and 96.2%." /></a>
+
+**[Sales Forecasting Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-)** brings retail records into a SQLite warehouse, generates Holt–Winters forecasts and exports the results for BI tools. Start with the [warehouse schema](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/blob/main/docs/schema_reference.md) to see how sales are grouped by store, department and date.
+
+**[Customer Retention Agent](https://github.com/pratuyshswain/customer-retention-agent)** takes a risk score and customer context and proposes a retention action through FastAPI. Follow one prediction through the [agent implementation](https://github.com/pratuyshswain/customer-retention-agent/blob/main/src/agent_orchestrator.py).
+
+<details><summary>Engineering checks for both projects</summary>
+
+| Repository | Latest engineering workflow on main |
 | --- | --- |
-| [Sales Forecasting Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-) | Follow sales records through a SQLite warehouse to Holt–Winters forecasts and BI exports. |
-| [Customer Retention Agent](https://github.com/pratuyshswain/customer-retention-agent) | Serve churn predictions and retention workflows through a FastAPI application. |
-| [Customer Churn Prediction](https://github.com/pratuyshswain/Customer-Churn-Prediction) | Inspect a random forest classifier and its model visualizations. |
-| [Mini Sales Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini) | Trace synthetic retail data through a compact forecasting and risk-visualization pipeline. |
+| Sales Forecasting Dashboard | [![Engineering workflow for Sales Forecasting Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/actions/workflows/engineering-checks.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-/actions/workflows/engineering-checks.yml) |
+| Customer Retention Agent | [![Engineering workflow for Customer Retention Agent](https://github.com/pratuyshswain/customer-retention-agent/actions/workflows/engineering-checks.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/customer-retention-agent/actions/workflows/engineering-checks.yml) |
 
-## Two small games
+</details>
+
+### More projects
+
+- **[Customer Churn Prediction](https://github.com/pratuyshswain/Customer-Churn-Prediction)** — Explore how a random forest classifies customers and how to visualize its predictions.
+- **[Mini Sales Dashboard](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini)** — Follow a compact example from synthetic retail records to a forecast and risk chart.
+
+## Games
 
 **[Contour Survey ↗](https://raw.githack.com/pratuyshswain/pratuyshswain/main/docs/index.html)** — Rotate a 3D landscape and identify its highest marked station. Three rounds, four stations per round. [Get the standalone HTML](https://github.com/pratuyshswain/pratuyshswain/raw/refs/heads/main/docs/index.html).
 
