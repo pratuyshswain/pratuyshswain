@@ -84,6 +84,8 @@ def render(days,repos):
 
 if __name__=='__main__':
     from animation import skyline
+    from name_box import render as render_name_box
     days, repos = github_data()
     render(days, repos)
     skyline(days)
+    (OUT / 'name-box.svg').write_text(render_name_box(days), encoding='utf-8')

@@ -4,7 +4,7 @@
 
 ### Contribution-grid name
 
-![Contribution-grid name](./assets/dashboard/name.gif)
+![Contribution-grid name](./assets/dashboard/name-box.svg)
 
 ### Profile emblem
 

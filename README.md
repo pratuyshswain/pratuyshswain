@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<p align="center"><a href="https://github.com/pratuyshswain"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/dashboard/name.svg"/><img src="./assets/dashboard/name.gif" width="100%" alt="Pratyusha Swain in animated grid lettering with a travelling pixel snake"/></picture></a></p>
+<p align="center"><a href="https://github.com/pratuyshswain"><picture><source media="(prefers-reduced-motion: reduce)" srcset="./assets/dashboard/name.svg"/><img src="./assets/dashboard/name-box.svg" width="100%" alt="Pratyusha Swain in multicoloured tiles with a moving octopus, nine pixel drawings and a worm that eats the grid"/></picture></a></p>
 
 <p align="center"><a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/identity.svg" width="135" alt="Pratyusha Swain profile"/></a></p>
 
