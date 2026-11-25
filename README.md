@@ -60,6 +60,14 @@ All four featured projects are MIT-licensed and include contribution guidelines,
 | [Customer-Churn-Prediction](https://github.com/pratuyshswain/Customer-Churn-Prediction) | [![Python checks](https://github.com/pratuyshswain/Customer-Churn-Prediction/actions/workflows/python-checks.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/Customer-Churn-Prediction/actions/workflows/python-checks.yml) | [![Docker smoke checks](https://github.com/pratuyshswain/Customer-Churn-Prediction/actions/workflows/docker-smoke.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/Customer-Churn-Prediction/actions/workflows/docker-smoke.yml) |
 | [Sales-Forecasting-Dashboard-mini](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini) | [![Python checks](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini/actions/workflows/python-checks.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini/actions/workflows/python-checks.yml) | [![Docker smoke checks](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini/actions/workflows/docker-smoke.yml/badge.svg?branch=main)](https://github.com/pratuyshswain/Sales-Forecasting-Dashboard-mini/actions/workflows/docker-smoke.yml) |
 
+## Upstream open-source contributions
+
+| Project | Contribution | Outcome |
+| --- | --- | --- |
+| [cv-benchkit](https://github.com/udayraj1238/cv-benchkit) | [PR #89: validate convert input path types](https://github.com/udayraj1238/cv-benchkit/pull/89) | Maintainer-approved and merged; [issue #68](https://github.com/udayraj1238/cv-benchkit/issues/68) resolved |
+
+The contribution adds source-format-specific input validation for COCO, YOLO and VOC, plus six regression tests. CI passed across Python 3.10–3.13. Implementation and tests were developed with disclosed AI assistance.
+
 ## Other repositories
 
 - [Python Network Tools](https://github.com/pratuyshswain/Python-Network-Tools) — educational networking and security exercises.
