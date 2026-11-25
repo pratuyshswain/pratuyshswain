@@ -14,9 +14,11 @@
 
 <img src="./assets/dashboard/section-about-me.svg" width="100%" alt="About me"/>
 
-<img src="./assets/dashboard/about.svg" width="100%" alt="Pratyusha Swain, B.Tech CSE student building machine learning and data engineering projects."/>
+<p align="center"><a href="https://github.com/pratuyshswain?tab=repositories"><img src="./assets/dashboard/about.svg" width="100%" alt="Pratyusha Swain, B.Tech CSE student. Four featured projects cover sales forecasting, customer retention, churn prediction and retail dashboards."/></a></p>
 
-<img src="./assets/dashboard/about-code.svg" width="100%" alt="Pratyusha's developer profile in Python"/>
+<p align="center"><img src="./assets/dashboard/about-code.svg" width="100%" alt="Animated about.py editor showing Pratyusha’s Python and SQL stack with rotating project notes in the terminal."/></p>
+
+<p align="center"><i>Which customers might leave? How much stock will a shop need next month?</i><br/><sub>Questions behind my retention and forecasting projects</sub></p>
 
 In [cv-benchkit PR #89](https://github.com/udayraj1238/cv-benchkit/pull/89), I added input-path validation for COCO, YOLO and VOC conversions and six regression tests. The maintainers merged the change. I used AI assistance for implementation and testing.
 
