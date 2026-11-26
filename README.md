@@ -10,6 +10,19 @@
 
 <p align="center"><a href="https://github.com/pratuyshswain?tab=followers"><img src="https://img.shields.io/github/followers/pratuyshswain?style=for-the-badge&amp;label=Followers&amp;color=844046&amp;labelColor=20262c" alt="GitHub followers"/></a> <a href="https://github.com/pratuyshswain?tab=repositories"><img src="https://img.shields.io/badge/Explore-Repositories-536b55?style=for-the-badge&amp;labelColor=20262c" alt="Explore repositories"/></a></p>
 
+<p align="center">
+  <a href="https://www.linkedin.com/in/pratyusha-swain-221407315/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"/></a>
+  <a href="https://github.com/pratuyshswain"><img src="https://img.shields.io/badge/GitHub-333942?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="GitHub"/></a>
+  <a href="https://www.credly.com/users/pratyusha-swain"><img src="https://img.shields.io/badge/Credly-AA531D?style=for-the-badge&amp;logo=credly&amp;logoColor=white" alt="Credly"/></a>
+  <a href="https://openbadgepassport.com/app/profile/381793"><img src="https://img.shields.io/badge/Open%20Badge%20Passport-714984?style=for-the-badge&amp;logo=openbadges&amp;logoColor=white" alt="Open Badge Passport"/></a>
+</p>
+
+<p align="center">
+  <a href="https://gdg.community.dev/u/pratuysh/#/about"><img src="https://img.shields.io/badge/Google%20Developer%20Groups-23704F?style=for-the-badge&amp;logo=google&amp;logoColor=white" alt="Google Developer Groups"/></a>
+  <a href="https://g.dev/pratyu"><img src="https://img.shields.io/badge/Google%20Developer%20Profile-365EA6?style=for-the-badge&amp;logo=google&amp;logoColor=white" alt="Google Developer Profile"/></a>
+  <a href="https://builder.aws.com/profile?tab=badges"><img src="https://img.shields.io/badge/AWS%20Builder%20Center-85501F?style=for-the-badge" alt="AWS Builder Center"/></a>
+</p>
+
 <img src="./assets/dashboard/splitter.svg" width="100%" alt=""/>
 
 <a id="about-me"></a>
