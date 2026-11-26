@@ -149,7 +149,13 @@ Actual sales were **135**. Your forecast missed by 5 units. You beat the baselin
 
 <img src="./assets/dashboard/section-connect-with-me.svg" width="100%" alt="Connect with me"/>
 
-<p align="center"><a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/contact-github.svg" width="49%" alt="Pratyusha’s GitHub profile"/></a> <a href="https://github.com/pratuyshswain?tab=repositories"><img src="./assets/dashboard/contact-repos.svg" width="49%" alt="Browse public repositories"/></a></p>
+<p align="center"><a href="https://www.linkedin.com/in/pratyusha-swain-221407315/"><img src="./assets/dashboard/contact-linkedin.svg" width="49%" alt="LinkedIn profile"/></a> <a href="https://github.com/pratuyshswain"><img src="./assets/dashboard/contact-github.svg" width="49%" alt="GitHub profile"/></a></p>
+
+<p align="center"><a href="https://www.credly.com/users/pratyusha-swain"><img src="./assets/dashboard/contact-credly.svg" width="49%" alt="Credly profile"/></a> <a href="https://openbadgepassport.com/app/profile/381793"><img src="./assets/dashboard/contact-open-badge.svg" width="49%" alt="Open Badge Passport profile"/></a></p>
+
+<p align="center"><a href="https://gdg.community.dev/u/pratuysh/#/about"><img src="./assets/dashboard/contact-gdg.svg" width="49%" alt="Google Developer Groups profile"/></a> <a href="https://g.dev/pratyu"><img src="./assets/dashboard/contact-google-dev.svg" width="49%" alt="Google Developer Profile profile"/></a></p>
+
+<p align="center"><a href="https://builder.aws.com/profile?tab=badges"><img src="./assets/dashboard/contact-aws-builder.svg" width="49%" alt="AWS Builder Center badges page"/></a> <a href="https://github.com/pratuyshswain?tab=repositories"><img src="./assets/dashboard/contact-repos.svg" width="49%" alt="Browse public repositories"/></a></p>
 
 [Upstream contribution to cv-benchkit](https://github.com/udayraj1238/cv-benchkit/pull/89)
 
